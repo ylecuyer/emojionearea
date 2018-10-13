@@ -550,7 +550,7 @@ function($, emojione, blankImg, slice, css_class, emojioneSupportMode, invisible
             });
         }
 
-        if (options.autocomplete) {
+        if (options.autocomplete && !options.standalone) {
             var autocomplete = function() {
                 var textcompleteOptions = {
                     maxCount: options.textcomplete.maxCount,
